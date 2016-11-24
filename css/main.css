@@ -16,8 +16,14 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+}
+
 img {
   width: 100%;
+  float: left;
+  display: block;
 }
 
 img:nth-child(2) {
@@ -26,4 +32,86 @@ img:nth-child(2) {
 
 img:nth-child(5) {
   display: none;
+}
+
+@media only screen and (min-width: 25em) {
+
+  img:nth-child(even) {
+    float: left;
+    display: inline-block;
+    width: 50%;
+  }
+
+  img:nth-child(3) {
+    float: left;
+    display: inline-block;
+    width: 50%;
+  }
+
+  img:nth-child(5) {
+    float: left;
+    display: inline-block;
+    width: 50%;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  img:nth-child(1) {
+    float: left;
+    display: inline-block;
+    width: 100%;
+  }
+
+  img:nth-child(even) {
+    float: left;
+    display: inline-block;
+    width: 33.3333%;
+  }
+
+  img:nth-child(3) {
+    float: left;
+    display: inline-block;
+    width: 33.3333%;
+  }
+
+  img:nth-child(5) {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  img:nth-child(1) {
+    float: left;
+    display: inline-block;
+    width: 66.6666%;
+  }
+
+  img:nth-child(2) {
+    float: left;
+    display: inline-block;
+    width: 33.3333%;
+  }
+
+  img:nth-child(3) {
+    float: left;
+    display: inline-block;
+    width: 33.3333%;
+  }
+
+  img:nth-child(4) {
+    float: left;
+    display: inline-block;
+    width: 33%;
+  }
+
+  img:nth-child(5) {
+    float: left;
+    display: inline-block;
+    width: 33%;
+  }
+
 }
